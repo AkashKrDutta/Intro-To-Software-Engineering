@@ -22,14 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $feed = $_POST["feedback"];
 
 
-  $sql = "INSERT INTO table1
-  VALUES ('".$q1."','".$q2."','".$q3."','".$q4."','".$feed."')";
-  if ($conn->query($sql) === TRUE) {
-      echo "Data was recorded successfully <br>";
-  } else {
-      echo "Error adding data: " . $conn->error . " <br>";
-	echo $q1;
+  if ($feed != ''){
+	  $sql = "INSERT INTO table1
+	  VALUES ('".$q1."','".$q2."','".$q3."','".$q4."','".$feed."')";
+	  if ($conn->query($sql) === TRUE) {
+	      echo "Data was recorded successfully <br>";
+	  } else {
+	      echo "Error adding data: " . $conn->error . " <br>";
+		echo $q1;
+	  }
   }
+
 
 }
 
