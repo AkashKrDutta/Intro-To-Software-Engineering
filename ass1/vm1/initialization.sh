@@ -6,6 +6,8 @@ apt-get upgrade
 apt-get install tasksel
 tasksel install lamp-server
 
+#Install git to clone repos online
+apt-get install git
 
 #extract files for vm1 to /var/www/html
 git clone https://github.com/AkashKrDutta/Intro-To-Software-Engineering

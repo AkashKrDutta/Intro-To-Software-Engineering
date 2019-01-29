@@ -1,11 +1,11 @@
 #! /bin/bash
 apt-get update
 apt-get upgrade
+apt-get install git
 
 # Setup lamp server environment
 apt-get install tasksel
 tasksel install lamp-server
-
 
 #configure the mysql server for remote connections from vm1
 cat << EOF | mysql
