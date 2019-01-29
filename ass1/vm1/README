@@ -1,0 +1,4 @@
+Run the following commands.
+
+1. ./initialization.sh
+2. Change the ip address of vm2 in /var/www/html/index.php and /var/www/html/response.php to that of vm2.

@@ -1,0 +1,10 @@
+Run using following commands:
+
+1. ./initialization.sh
+2. Change the binding address of mysql config file present in /etc/mysql/mysql.conf.d/mysqld.cnf. Uncomment the line 
+   
+    bind-address = 127.0.0.1
+    to
+    #bind-address = 127.0.0.1
+
+    This enables mysql to bind on all interfaces.
