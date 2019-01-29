@@ -74,7 +74,7 @@ $count=1;
 if ($result->num_rows > 0) {
     echo "<ol>";
     while($row = $result->fetch_assoc()) {
-        echo "<li><details><summary> Feed: ". $count." Click to view!</summary>".$row[feed]."</details></li>";
+        echo "<li><details><summary> Click to view Feed ". $count."</summary>".$row[feed]."</details></li>";
 	$count++;
     }
     echo "</ol>"; 

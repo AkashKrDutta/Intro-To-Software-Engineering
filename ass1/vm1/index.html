@@ -171,9 +171,23 @@
 	<script>
 		function validateForm()
 		{
-			// var x = document.forms["myForm"]["froll"].value;
-			// var y = document.forms["myForm"]["ffname"].value;
-			// var z = document.forms["myForm"]["fmname"].value;
+			if(!(document.getElementById('i_0_0').checked || document.getElementById('i_1_0').checked || document.getElementById('i_2_0').checked || document.getElementById('i_3_0').checked || document.getElementById('i_4_0').checked) ){
+				alert('Please answer if you are satisfied with our products or not! (Required Field)');
+				return false;}
+			
+
+if(!(document.getElementById('i_0_1').checked || document.getElementById('i_1_1').checked || document.getElementById('i_2_1').checked || document.getElementById('i_3_1').checked || document.getElementById('i_4_1').checked) ){
+				alert('Please answer if you find our products easy to use or not! (Required Field)');
+				return false;}
+
+if(!(document.getElementById('i_0_2').checked || document.getElementById('i_1_2').checked || document.getElementById('i_2_2').checked || document.getElementById('i_3_2').checked || document.getElementById('i_4_2').checked) ){
+				alert('Please answer how much impact our products have made on your daily routine! (Required Field)');
+				return false;}
+
+if(!(document.getElementById('i_0_3').checked || document.getElementById('i_1_3').checked || document.getElementById('i_2_3').checked || document.getElementById('i_3_3').checked || document.getElementById('i_4_3').checked) ){
+				alert('Please answer if you would you recommend our products to your friends and family! (Required Field)');
+				return false;}
+
 			return true;
 		}
 	
