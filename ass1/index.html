@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Feedback Form</title>
+                <meta name="viewport" content = "width = device-width, initial-scale = 1">      
+                <link rel = "stylesheet"
+                        href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link rel = "stylesheet"
+                        href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+                <script  type="text/javascript"
+                        src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+                <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+                </script>            
+        </head>
+
+        <body class="container">
+        <div class="row">
+                <br>
+        </div>
+        <div class="row">                
+                <form class="col s12" name="myForm" action="./index.php" onsubmit="return validateForm()" method="post">
+                <div class="row">
+                    <div class="col s4">
+                    <br>
+                    </div>
+                    <div class="col s5">
+                        <h5>Provide Feedback Please</h5>
+                    </div>
+                    <div class="col s3">
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                        <div class="input-field col s6">
+                                Are you satisfied with our products?
+                                <br>
+                                <div class="col s2">
+                                    <input id = "i_0_0"  type="radio" name="question_1"
+                                    value = "0" />
+                                    <label for="i_0_0"> 1</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_1_0"  type="radio" name="question_1"
+                                        value = "1"/>
+                                        <label for="i_1_0"> 2</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_2_0"  type="radio" name="question_1"
+                                        value = "2"/>
+                                        <label for="i_2_0"> 3</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_3_0"  type="radio" name="question_1"
+                                        value = "3"/>
+                                        <label for="i_3_0"> 4</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_4_0"  type="radio" name="question_1"
+                                        value = "4"/>
+                                        <label for="i_4_0"> 5</label>
+                                </div>
+                        </div>
+                        <div class="input-field col s6">
+                            Do you find our products easy to use?
+                                <br>
+                                <div class="col s2">
+                                        <input id = "i_0_1"  type="radio" name="question_2"
+                                        value = "0" />
+                                        <label for="i_0_1"> 1</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_1_1"  type="radio" name="question_2"
+                                        value = "1"/>
+                                        <label for="i_1_1"> 2</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_2_1"  type="radio" name="question_2"
+                                        value = "2"/>
+                                        <label for="i_2_1"> 3</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_3_1"  type="radio" name="question_2"
+                                        value = "3"/>
+                                        <label for="i_3_1"> 4</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_4_1"  type="radio" name="question_2"
+                                        value = "4"/>
+                                        <label for="i_4_1"> 5</label>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="input-field col s6">
+                                How much impact have our products made on your daily routine?
+                                <br>
+                                <div class="col s2">
+                                        <input id = "i_0_2"  type="radio" name="question_3"
+                                        value = "0" />
+                                        <label for="i_0_2"> 1</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_1_2"  type="radio" name="question_3"
+                                        value = "1"/>
+                                        <label for="i_1_2"> 2</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_2_2"  type="radio" name="question_3"
+                                        value = "2"/>
+                                        <label for="i_2_2"> 3</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_3_2"  type="radio" name="question_3"
+                                        value = "3"/>
+                                        <label for="i_3_2"> 4</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_4_2"  type="radio" name="question_3"
+                                        value = "4"/>
+                                        <label for="i_4_2"> 5</label>
+                                </div>
+                        </div>
+                        <div class="input-field col s6">
+                            Would you recommend our products to your friends and family?
+                                <br>
+                                <div class="col s2">
+                                        <input id = "i_0_3"  type="radio" name="question_4"
+                                        value = "0" />
+                                        <label for="i_0_3"> 1</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_1_3"  type="radio" name="question_4"
+                                        value = "1"/>
+                                        <label for="i_1_3"> 2</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_2_3"  type="radio" name="question_4"
+                                        value = "2"/>
+                                        <label for="i_2_3"> 3</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_3_3"  type="radio" name="question_4"
+                                        value = "3"/>
+                                        <label for="i_3_3"> 4</label>
+                                </div>
+                                <div class="col s2">
+                                        <input id = "i_4_3"  type="radio" name="question_4"
+                                        value = "4"/>
+                                        <label for="i_4_3"> 5</label>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id = "feedback" data-length="500" name="feedback" placeholder="Any Miscellaneous Feedback?"/>
+                        </div>
+                        <div class="col s5">
+                        <br>
+                        </div>
+                        <div class="col s2">
+                            <button class="btn" type="submit" name="action">Submit</button>
+                        </div>
+                </div>
+                </form>       
+        </div>
+        </body>
+
+	<script>
+		function validateForm()
+		{
+			// var x = document.forms["myForm"]["froll"].value;
+			// var y = document.forms["myForm"]["ffname"].value;
+			// var z = document.forms["myForm"]["fmname"].value;
+			return true;
+		}
+	
+	</script>
+
+</html>
