@@ -1,0 +1,5 @@
+Instructions
+
+1. Make sure in vm1 and vm2 (service vms), the exec path for script is correct. For example, in vm1, the exec path in vm1.service points correctly to the vm1.sh.
+
+2. Run ./init.sh for each vm

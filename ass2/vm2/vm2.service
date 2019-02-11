@@ -2,7 +2,7 @@
 Description=Random_no service
  
 [Service]
-ExecStart=/home/akash/repo/Intro-To-Software-Engineering/ass2/vm2/vm2.sh
+ExecStart=/home/akash2/repo/Intro-To-Software-Engineering/ass2/vm2/vm2.sh
  
 [Install]
 WantedBy=multi-user.target
