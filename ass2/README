@@ -2,4 +2,6 @@ Instructions
 
 1. Make sure in vm1 and vm2 (service vms), the exec path for script is correct. For example, in vm1, the exec path in vm1.service points correctly to the vm1.sh.
 
-2. Run ./init.sh for each vm
+2. In vm3.sh, put the ip1 to that of vm1 and ip2 to that of vm2. Do that in init.sh as well and check that usernames are written properly for vm1 and vm2.
+
+3. Run ./init.sh for each vm in sudo mode.

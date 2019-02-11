@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #Change this ip to that of vm1 
-ip1=192.168.0.124
+ip1=192.168.0.113
 
 #Change this ip to that of vm2
-ip2=192.168.0.125
+ip2=192.168.0.114
 
 if [[ "$#" -ne 1 ]]; then
     echo "Usage: ./vm3.sh <ping frequency in secs>"
