@@ -12,6 +12,9 @@ if [[ "$#" -ne 1 ]]; then
     echo "Usage: ./vm3.sh <ping frequency in secs>"
     exit
 fi
+
+echo "<link href=\"txtstyle.css\" rel=\"stylesheet\" type=\"text/css\" />" > output.html
+
  
 freq=$1
 time="$1s"
@@ -19,23 +22,23 @@ while [ : ]
 do
     if [[ "$(ping -c 1 $ip1 | grep '0% packet loss' )" != "1 packets transmitted, 1 received, 0% packet loss, time 0ms" ]];
     then
-            echo "Host vm1 Unreachable!"
+            echo "Host vm1 Unreachable! <br>" >> output.html
     else
-	    echo "vm1 status:"
+	    echo "vm1 status: <br>">> output.html
 
-            systemctl --host $user1@$ip1 is-active vm1.service
-            
+            systemctl --host $user1@$ip1 is-active vm1.service >> output.html
+            echo "<br>">> output.html
     fi
 
 
 
     if [[ "$(ping -c 1 $ip2 | grep '0% packet loss' )" != "1 packets transmitted, 1 received, 0% packet loss, time 0ms" ]];
     then
-            echo "Host vm2 Unreachable!"
+            echo "Host vm2 Unreachable! <br>" >> output.html
     else
-	    echo "vm2 status:"
-            systemctl --host $user2@$ip2 is-active vm2.service
-            
+	    echo "vm2 status: <br>" >> output.html
+            systemctl --host $user2@$ip2 is-active vm2.service >> output.html
+            echo "<br>">> output.html
     fi
  
     sleep $time
