@@ -1,3 +1,15 @@
+#!/bin/bash
+apt-get update
+apt-get upgrade
+
+# Setup lamp server environment
+apt-get install tasksel
+tasksel install lamp-server
+
+#After apache is installed
+cp -r ./* /var/www/html/
+
+
 ssh-keygen
 
 #check whether user@server is written correctly

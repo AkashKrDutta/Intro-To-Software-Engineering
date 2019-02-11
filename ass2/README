@@ -2,6 +2,10 @@ Instructions
 
 1. For vm1 and vm2 (service vm): Make sure the exec path for script is correct. For example, in vm1, the exec path in vm1.service points correctly to the vm1.sh.
 
-2. For vm3: Check username and ip of each vm is written correctly in init.sh and vm3.sh.
+2. For vm3: Check username and ip of each vm is written correctly in init.sh and vm3.sh. Make sure apace server works in vm3 see ass1 for that. Also to enable passwordless sudo for apache server add this line at the end of file /etc/sudoers:
+   www-data ALL=(ALL) NOPASSWD: ALL
+
+   Also, copy index.php, vm3.sh, output.html, txtstyle.css into /var/www/html
+
 
 3. Run ./init.sh for each vm in sudo mode.
