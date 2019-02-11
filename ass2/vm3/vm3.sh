@@ -34,7 +34,7 @@ do
 	    vm1Machine=0
     else
             vm1Machine=1
-	    if [[ "$(systemctl --host $user1@$ip1 is-active vm1.service)" != "active" ]];then
+	    if [[ "$(sudo -u akash systemctl --host $user1@$ip1 is-active vm1.service)" != "active" ]];then
 		vm1Status=0
 	    else
 		vm1Status=1
@@ -48,7 +48,7 @@ do
 	    vm2Machine=0
     else
             vm2Machine=1
-	    if [[ "$(systemctl --host $user1@$ip1 is-active vm1.service)" != "active" ]];then
+	    if [[ "$(sudo -u akash systemctl --host $user1@$ip1 is-active vm1.service)" != "active" ]];then
 		vm2Status=0
 	    else
 		vm2Status=1

@@ -9,7 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	echo "Current freq (default 5 secs): ";
 	echo $freq;
 	exec("pkill vm3");
-	shell_exec("/var/www/html/vm3.sh ".$freq." >/dev/null &");	
+	exec("export TERM=xterm");
+	exec("/var/www/html/vm3.sh ".$freq." >/dev/null 2>&1 &", $output);
+
 }
 ?>
 
