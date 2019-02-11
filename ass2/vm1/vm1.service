@@ -1,0 +1,8 @@
+[Unit]
+Description=Random_no service
+ 
+[Service]
+ExecStart=/home/akash/repo/Intro-To-Software-Engineering/ass2/vm1/vm1.sh
+ 
+[Install]
+WantedBy=multi-user.target
